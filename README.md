@@ -18,11 +18,11 @@ This bot is offline.
 
 ## Setup
 1. Clone the repository.
-2. Install required  packages. 
+2. Install required packages.
 3. Create a telegram API token with bot father. Following the [link](https://medium.com/shibinco/create-a-telegram-bot-using-botfather-and-get-the-api-token-900ba00e0f39) to generate your own token.
 4. Add token to the *Program.cs* file.
 
-     `bot = telebot.TeleBot('TELEGRAM TOKEN')`
+     `public static string token = "TELEGRAM TOKEN";
 5. Run project.
 
 ## Bot commands
