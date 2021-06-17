@@ -1,0 +1,5 @@
+
+*.pdb
+*.cache
+*.ide-wal
+*.lock

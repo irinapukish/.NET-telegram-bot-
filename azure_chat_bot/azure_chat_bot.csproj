@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FFmpeg.Nightly" Version="20190604.1.0" />
+    <PackageReference Include="FFmpeg.Win10" Version="3.1.3" />
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.5.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Telegram.Bot" Version="14.11.0" />
+    <PackageReference Include="Xabe.FFmpeg" Version="3.1.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NReco.VideoConverter">
+      <HintPath>NReco.VideoConverter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="ffmpeg.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Settings.job">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
